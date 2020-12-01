@@ -13,6 +13,12 @@ a {
   color: black;
 }
 
+a.disabled {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  opacity: 40%;
+}
 .navbar {
   display: flex;
   margin: 15px 30px;
