@@ -6,6 +6,15 @@
   color: pink;
 }
 
+/*création d'un bouton pour changer le prénom et sa couleur d'écriture*/
+.btnChangeName{
+  background-color: pink;
+  color: #ffffff;
+  border-color:#ffffff ;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .purple-text {
   color: #750ff7;
 }
@@ -23,6 +32,8 @@
   text-align: center;
 }
 
+/*création média query pour rendre le site responsive pour les écrans plus grand que 700px*/
+/*décalage à droite du nemu du haut (sauf logo) dans la navbar*/
 @media (min-width: 700px) {
   .menu {
     display: flex;
@@ -32,21 +43,16 @@
   }
 }
 
+/*centrage du titre "FullStack Developer", du texte de l'avatar et de l'image de l'avatar*/
 @media (min-width: 700px) {
-  .avatar {
+  h1, .avatar, .desktop {
     display: flex;
     justify-content: center;
   }
-}
-@media (min-width: 700px) {
-  .desktop {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-  }
+
 }
 
+/*inversion de back-end et front-end*/
 @media (min-width: 700px) {
   .skills {
     display: flex;
@@ -55,13 +61,7 @@
   }
 }
 
-@media (min-width: 700px) {
-  h1 {
-    display: flex;
-    justify-content: center;
-  }
-}
-
+/*les quatre projet (contents) dans la section projects se mettent en ligne, prennent toute la place et retourne à la ligne*/
 @media (min-width: 700px) {
   .contents {
     display: flex;
@@ -70,12 +70,15 @@
   }
 }
 
+/*création média query pour rendre le site responsive pour les écrans plus petit que 700px*/
+/*l'image de l'introcudtion disparait*/
 @media (max-width: 700px) {
   .introduction {
     visibility: hidden;
   }
 }
 
+/*Les section Back-end et Front-end se superposer et change d'ordre*/
 @media (max-width: 700px) {
   .skills {
     display: flex;

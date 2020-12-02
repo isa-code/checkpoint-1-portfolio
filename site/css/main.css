@@ -13,6 +13,7 @@ a {
   color: black;
 }
 
+/*création de la classe désactivé pour gérer l'opacité du texte des liens inactifs*/
 a.disabled {
   padding: 10px;
   text-decoration: none;
