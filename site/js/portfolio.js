@@ -10,6 +10,6 @@ document.querySelector(".desktop").addEventListener("click", function (event) {
 let newName = document.querySelector(".btnChangeName");
     newName.onclick = function(){
         let newName = prompt("Quel est votre nom");
-        let oldName = document.querySelector("#name");
-        oldName.replace(newName);
+        document.getElementById("name").style.color = "white";
+        document.getElementById("name").innerHTML = newName;
     }
